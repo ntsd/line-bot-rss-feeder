@@ -91,7 +91,7 @@ def callback():
             print("  %s: %s" % (m.property, m.message))
         print("\n")
     except InvalidSignatureError:
-        abort(400)
+        return 'OK' #abort(400)
 
     return 'OK'
 
